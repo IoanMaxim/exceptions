@@ -1,7 +1,7 @@
 ﻿using System;
 //EXCEPTIONS:
 //
-namespace exceptions
+namespace Exceptions
 {
     class Program
     {
@@ -23,14 +23,13 @@ namespace exceptions
 
             try
             {
-                Person ionut = new Person(15);
+                Person ionut = new Person(35);
                 Person ionut1 = new Person(-1);
                 Person ionut2 = new Person(2);
                 Person ionut3 = new Person(81);
             }
             catch (ArgumentException e)
             {
-                
                 //Console.WriteLine(e);//This will show all the error;
                 Console.WriteLine(e.Message + e.GetType());
                 //throw;
@@ -38,10 +37,6 @@ namespace exceptions
             catch (DressCodeException ex)
             {
                 Console.WriteLine(ex.Message + ex.GetType());
-            }
-            finally
-            {
-                //close DataBase conection;
             }
 
 
